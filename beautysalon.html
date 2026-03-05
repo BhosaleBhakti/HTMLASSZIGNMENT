@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Glamour Beauty Salon</h1>
+    
+    <p>At Glamour Beauty Salon, we offer a luxurious and relaxing experience tailored to enhance your natural beauty. Our team of skilled professionals uses high-quality products and the latest techniques to provide exceptional services in a serene environment. Whether you're looking for a quick refresh or a full makeover, we're here to make you feel pampered and confident.</p>
+    
+    <h2>Our Services</h2>
+    <ul>
+        <li>Haircut and Styling</li>
+        <li>Hair Coloring and Highlights</li>
+        <li>Facial Treatments</li>
+        <li>Manicure and Pedicure</li>
+        <li>Body Massage</li>
+        <li>Waxing and Threading</li>
+    </ul>
+    
+    <h2>Service Charges</h2>
+    <table> 
+        <thead>
+            <tr>
+                <th class="b">Service</th>
+                <th class="b">Duration</th>
+                <th class="b">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Haircut and Styling</td>
+                <td>45 minutes</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Hair Coloring and Highlights</td>
+                <td>1 hour 30 minutes</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Facial Treatments</td>
+                <td>1 hour</td>
+                <td>$60</td>
+            </tr>
+            <tr>
+                <td>Manicure and Pedicure</td>
+                <td>1 hour</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Body Massage</td>
+                <td>1 hour</td>
+                <td>$70</td>
+            </tr>
+            <tr>
+                <td>Waxing and Threading</td>
+                <td>30 minutes</td>
+                <td>$30</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Appointment Form</h2>
+    <form action="/book-appointment" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="service">Preferred Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="haircut">Haircut and Styling</option>
+            <option value="coloring">Hair Coloring and Highlights</option>
+            <option value="facial">Facial Treatments</option>
+            <option value="mani-pedi">Manicure and Pedicure</option>
+            <option value="massage">Body Massage</option>
+            <option value="waxing">Waxing and Threading</option>
+        </select>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <label for="message">Additional Notes:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any special requests or preferences?"></textarea>
+        
+        <button type="submit">Book Appointment</button>
+    </form>
+</body>
+</html>

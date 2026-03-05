@@ -1,0 +1,113 @@
+<think>
+First, the user wants a web page for Car Rental. It should include:
+
+</think>```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form { max-width: 400px; margin-top: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, button { width: 100%; padding: 8px; margin-bottom: 10px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Car Rental</h1>
+    
+    <h2>Drive Your Adventure</h2>
+    <p>Rent a vehicle that suits your needs and explore the world on your terms. Our fleet offers a wide range of cars for every occasion, from compact city drives to spacious SUVs for family trips. Check our daily rates, select your vehicle, and book your rental today.</p>
+    
+    <h2>Vehicle Types</h2>
+    <ul>
+        <li>Compact Cars</li>
+        <li>Sedans</li>
+        <li>SUVs</li>
+        <li>Luxury Vehicles</li>
+        <li>Vans</li>
+        <li>Trucks</li>
+    </ul>
+    
+    <h2>Daily Rental Rates</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Daily Rate</th>
+                <th>Features</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Compact Cars</td>
+                <td>$29.99</td>
+                <td>Fuel-efficient, ideal for city driving</td>
+            </tr>
+            <tr>
+                <td>Sedans</td>
+                <td>$39.99</td>
+                <td>Comfortable seating, good mileage</td>
+            </tr>
+            <tr>
+                <td>SUVs</td>
+                <td>$59.99</td>
+                <td>Spacious, all-wheel drive, family-friendly</td>
+            </tr>
+            <tr>
+                <td>Luxury Vehicles</td>
+                <td>$89.99</td>
+                <td>Premium features, leather interiors</td>
+            </tr>
+            <tr>
+                <td>Vans</td>
+                <td>$69.99</td>
+                <td>Ample space for groups or cargo</td>
+            </tr>
+            <tr>
+                <td>Trucks</td>
+                <td>$79.99</td>
+                <td>High payload capacity, towing capability</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Rental Form</h2>
+    <form action="/submit-rental" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="vehicle">Vehicle Type:</label>
+        <select id="vehicle" name="vehicle" required>
+            <option value="">Select Vehicle Type</option>
+            <option value="compact">Compact Cars</option>
+            <option value="sedan">Sedans</option>
+            <option value="suv">SUVs</option>
+            <option value="luxury">Luxury Vehicles</option>
+            <option value="van">Vans</option>
+            <option value="truck">Trucks</option>
+        </select>
+        
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" name="pickup-date" required>
+        
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+        
+        <button type="submit">Book Rental</button>
+    </form>
+</body>
+</html>
+```

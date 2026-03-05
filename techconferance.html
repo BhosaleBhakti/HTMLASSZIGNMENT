@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { max-width: 400px; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Annual Tech Conference</h1>
+    
+    <p>The Annual Tech Conference is a premier event bringing together innovators, developers, and tech enthusiasts from around the world. Join us for insightful talks, hands-on workshops, and networking opportunities that will shape the future of technology. This year's theme is "Innovation in the Digital Age," featuring keynote speakers from leading tech companies.</p>
+    
+    <h2>Workshop Topics</h2>
+    <ul>
+        <li>Introduction to Artificial Intelligence</li>
+        <li>Building Scalable Web Applications</li>
+        <li>Cybersecurity Best Practices</li>
+        <li>Machine Learning Fundamentals</li>
+        <li>Blockchain and Cryptocurrency</li>
+    </ul>
+    
+    <h2>Event Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Day 1</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Opening Keynote</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>AI Workshop</td>
+                <td>Room A</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Blockchain Seminar</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>Cybersecurity Panel</td>
+                <td>Room B</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Registration Form</h2>
+    <form action="/submit-registration" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="company">Company/Organization:</label>
+        <input type="text" id="company" name="company">
+        
+        <label for="workshop">Preferred Workshop:</label>
+        <select id="workshop" name="workshop">
+            <option value="">Select a workshop</option>
+            <option value="ai">Introduction to Artificial Intelligence</option>
+            <option value="web">Building Scalable Web Applications</option>
+            <option value="security">Cybersecurity Best Practices</option>
+            <option value="ml">Machine Learning Fundamentals</option>
+            <option value="blockchain">Blockchain and Cryptocurrency</option>
+        </select>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

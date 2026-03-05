@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { max-width: 400px; }
+        label { display: block; margin-top: 10px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Luxury Downtown Apartments</h1>
+    
+    <p>Discover the epitome of modern living in our exclusive downtown apartments. Located in the heart of the city, these high-rise residences offer stunning views, premium finishes, and unparalleled convenience. Whether you're looking for a cozy studio or a spacious penthouse, our properties cater to every lifestyle. Experience urban sophistication with easy access to shopping, dining, and entertainment.</p>
+    
+    <h2>Property Amenities</h2>
+    <ul>
+        <li>Rooftop pool with city views</li>
+        <li>State-of-the-art fitness center</li>
+        <li>24/7 concierge service</li>
+        <li>Underground parking</li>
+        <li>Pet-friendly environment</li>
+        <li>In-unit laundry facilities</li>
+        <li>High-speed internet included</li>
+    </ul>
+    
+    <h2>Apartment Pricing</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Unit Type</th>
+                <th>Size (sq ft)</th>
+                <th>Bedrooms</th>
+                <th>Bathrooms</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Studio</td>
+                <td>500</td>
+                <td>0</td>
+                <td>1</td>
+                <td>$1,200/month</td>
+            </tr>
+            <tr>
+                <td>One-Bedroom</td>
+                <td>700</td>
+                <td>1</td>
+                <td>1</td>
+                <td>$1,500/month</td>
+            </tr>
+            <tr>
+                <td>Two-Bedroom</td>
+                <td>900</td>
+                <td>2</td>
+                <td>2</td>
+                <td>$2,000/month</td>
+            </tr>
+            <tr>
+                <td>Penthouse</td>
+                <td>1,200</td>
+                <td>3</td>
+                <td>2</td>
+                <td>$3,500/month</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Inquiry Form</h2>
+    <form action="/submit-inquiry" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="unit">Interested Unit Type:</label>
+        <input type="text" id="unit" name="unit" placeholder="e.g., One-Bedroom">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any questions or additional details?"></textarea>
+        
+        <button type="submit">Submit Inquiry</button>
+    </form>
+</body>
+</html>

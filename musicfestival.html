@@ -1,0 +1,103 @@
+<think>
+First, the user wants a web page for Music Festival. It must include:
+
+
+## Planning Web Page Structure  
+- The user needs a web page for a Music Festival with specific components.
+</think>```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { max-width: 400px; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Summer Music Festival</h1>
+    
+    <p>The Summer Music Festival is an electrifying event celebrating the best in rock, pop, and indie music. Set against the stunning backdrop of a lakeside venue, this two-day extravaganza features world-renowned artists, food trucks, and interactive experiences. Whether you're a die-hard fan or just looking for a great time, join us for unforgettable performances and vibrant energy that will keep you dancing all night long.</p>
+    
+    <h2>Featured Performers</h2>
+    <ul>
+        <li>The Electric Waves</li>
+        <li>Pop Starz</li>
+        <li>Indie Echoes</li>
+        <li>Rock Legends</li>
+        <li>DJ Groove Master</li>
+    </ul>
+    
+    <h2>Stage Timings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Stage</th>
+                <th>Time</th>
+                <th>Performer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Main Stage</td>
+                <td>6:00 PM - 7:30 PM</td>
+                <td>The Electric Waves</td>
+            </tr>
+            <tr>
+                <td>Main Stage</td>
+                <td>8:00 PM - 9:30 PM</td>
+                <td>Pop Starz</td>
+            </tr>
+            <tr>
+                <td>Indie Stage</td>
+                <td>7:00 PM - 8:30 PM</td>
+                <td>Indie Echoes</td>
+            </tr>
+            <tr>
+                <td>Rock Stage</td>
+                <td>9:00 PM - 10:30 PM</td>
+                <td>Rock Legends</td>
+            </tr>
+            <tr>
+                <td>DJ Stage</td>
+                <td>10:00 PM - 11:30 PM</td>
+                <td>DJ Groove Master</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Ticket Booking Form</h2>
+    <form action="/book-ticket" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="ticket-type">Ticket Type:</label>
+        <select id="ticket-type" name="ticket-type" required>
+            <option value="">Select ticket type</option>
+            <option value="general">General Admission - $50</option>
+            <option value="vip">VIP - $100</option>
+            <option value="day1">Day 1 Only - $30</option>
+            <option value="day2">Day 2 Only - $30</option>
+        </select>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+        
+        <button type="submit">Book Tickets</button>
+    </form>
+</body>
+</html>

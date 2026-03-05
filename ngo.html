@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Volunteering</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { max-width: 400px; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Join Our NGO Volunteering Efforts</h1>
+    
+    <p>Our NGO is dedicated to making a positive impact in communities worldwide through sustainable development, education, and environmental conservation. Volunteering with us offers a chance to contribute your skills and time to meaningful causes. Whether you're passionate about teaching, environmental work, or community building, there's a place for you. Join our team of dedicated volunteers and help create lasting change.</p>
+    
+    <h2>Active Projects</h2>
+    <ul>
+        <li>Community Education Program: Teaching literacy and skills in underserved areas.</li>
+        <li>Environmental Cleanup: Organizing beach and park cleanups to protect local ecosystems.</li>
+        <li>Food Distribution Drive: Providing meals to families in need during crises.</li>
+        <li>Youth Mentorship: Guiding young people towards positive futures through mentorship.</li>
+        <li>Reforestation Initiative: Planting trees to combat deforestation and climate change.</li>
+    </ul>
+    
+    <h2>Upcoming Drives</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Drive Name</th>
+                <th>Location</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>October 15, 2023</td>
+                <td>Beach Cleanup</td>
+                <td>Coastal Park</td>
+                <td>Collect litter and raise awareness about ocean pollution.</td>
+            </tr>
+            <tr>
+                <td>November 5, 2023</td>
+                <td>Food Drive</td>
+                <td>Community Center</td>
+                <td>Distribute non-perishable food items to local shelters.</td>
+            </tr>
+            <tr>
+                <td>December 10, 2023</td>
+                <td>Tree Planting</td>
+                <td>Urban Forest</td>
+                <td>Plant native trees to improve air quality and biodiversity.</td>
+            </tr>
+            <tr>
+                <td>January 20, 2024</td>
+                <td>Education Workshop</td>
+                <td>Local School</td>
+                <td>Conduct workshops on STEM topics for underprivileged students.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Volunteer Form</h2>
+    <form action="/submit-volunteer" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="project">Preferred Project:</label>
+        <select id="project" name="project">
+            <option value="">Select a project</option>
+            <option value="education">Community Education Program</option>
+            <option value="cleanup">Environmental Cleanup</option>
+            <option value="food">Food Distribution Drive</option>
+            <option value="mentorship">Youth Mentorship</option>
+            <option value="reforestation">Reforestation Initiative</option>
+        </select>
+        
+        <label for="availability">Availability:</label>
+        <textarea id="availability" name="availability" rows="3" placeholder="e.g., Weekends, specific dates"></textarea>
+        
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your skills or why you want to volunteer"></textarea>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>

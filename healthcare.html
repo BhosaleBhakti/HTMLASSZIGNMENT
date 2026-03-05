@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Appointment System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form { max-width: 400px; margin-top: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, button { width: 100%; padding: 8px; margin-bottom: 10px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Healthcare Appointment System</h1>
+    
+    <h2>Welcome to Our Clinic</h2>
+    <p>Book your appointment easily with our online system. We offer services across various departments to cater to your healthcare needs. Select a department, check doctor availability, and fill out the form below.</p>
+    
+    <h2>Departments</h2>
+    <ul>
+        <li>Cardiology</li>
+        <li>Dermatology</li>
+        <li>Orthopedics</li>
+        <li>Pediatrics</li>
+        <li>General Medicine</li>
+    </ul>
+    
+    <h2>Doctor Availability</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Department</th>
+                <th>Available Days</th>
+                <th>Time Slots</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dr. John Smith</td>
+                <td>Cardiology</td>
+                <td>Monday, Wednesday, Friday</td>
+                <td>9:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Emily Davis</td>
+                <td>Dermatology</td>
+                <td>Tuesday, Thursday</td>
+                <td>1:00 PM - 4:00 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Michael Lee</td>
+                <td>Orthopedics</td>
+                <td>Monday, Tuesday, Saturday</td>
+                <td>10:00 AM - 2:00 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Sarah Wilson</td>
+                <td>Pediatrics</td>
+                <td>Wednesday, Friday</td>
+                <td>8:00 AM - 11:00 AM</td>
+            </tr>
+            <tr>
+                <td>Dr. Robert Brown</td>
+                <td>General Medicine</td>
+                <td>Daily</td>
+                <td>9:00 AM - 5:00 PM</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Book an Appointment</h2>
+    <form action="/submit-appointment" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="general">General Medicine</option>
+        </select>
+        
+        <label for="doctor">Preferred Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="">Select Doctor</option>
+            <option value="smith">Dr. John Smith</option>
+            <option value="davis">Dr. Emily Davis</option>
+            <option value="lee">Dr. Michael Lee</option>
+            <option value="wilson">Dr. Sarah Wilson</option>
+            <option value="brown">Dr. Robert Brown</option>
+        </select>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <button type="submit">Book Appointment</button>
+    </form>
+</body>
+</html>

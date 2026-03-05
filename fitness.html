@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club Membership</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form { max-width: 400px; margin-top: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, button { width: 100%; padding: 8px; margin-bottom: 10px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Fitness Club Membership</h1>
+    
+    <h2>Join Our Fitness Community</h2>
+    <p>Transform your health and fitness with our state-of-the-art facilities and expert trainers. Choose from a variety of workout classes, select a membership plan that fits your lifestyle, and enroll today to start your journey towards a healthier you.</p>
+    
+    <h2>Workout Classes</h2>
+    <ul>
+        <li>Yoga</li>
+        <li>HIIT (High-Intensity Interval Training)</li>
+        <li>Spin Cycling</li>
+        <li>Pilates</li>
+        <li>Strength Training</li>
+        <li>Zumba</li>
+    </ul>
+    
+    <h2>Membership Plans</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Plan Name</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Features</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic</td>
+                <td>1 Month</td>
+                <td>$29.99</td>
+                <td>Access to gym equipment, locker room</td>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td>3 Months</td>
+                <td>$79.99</td>
+                <td>All Basic features + 2 free classes per week</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>6 Months</td>
+                <td>$149.99</td>
+                <td>All Standard features + personal trainer session</td>
+            </tr>
+            <tr>
+                <td>Annual</td>
+                <td>12 Months</td>
+                <td>$249.99</td>
+                <td>All Premium features + unlimited classes</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Enroll Now</h2>
+    <form action="/submit-enrollment" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="plan">Membership Plan:</label>
+        <select id="plan" name="plan" required>
+            <option value="">Select Plan</option>
+            <option value="basic">Basic (1 Month - $29.99)</option>
+            <option value="standard">Standard (3 Months - $79.99)</option>
+            <option value="premium">Premium (6 Months - $149.99)</option>
+            <option value="annual">Annual (12 Months - $249.99)</option>
+        </select>
+        
+        <label for="start-date">Preferred Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+        
+        <button type="submit">Enroll</button>
+    </form>
+</body>
+</html>

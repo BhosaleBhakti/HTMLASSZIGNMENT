@@ -1,0 +1,22 @@
+/* Style the image */
+img {
+  width: 300px;          /* Resize image */
+  height: auto;          /* Maintain aspect ratio */
+  border-radius: 15px;   /* Rounded corners */
+  border: 2px solid #333; /* Optional border */
+}
+
+/* Style the links */
+a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+  margin: 10px;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}

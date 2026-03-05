@@ -1,0 +1,116 @@
+<think>
+First, the user wants a web page for Restaurant Reservation. It should include:
+
+</think>```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form { max-width: 400px; margin-top: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, button { width: 100%; padding: 8px; margin-bottom: 10px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Reservation</h1>
+    
+    <h2>Welcome to Our Fine Dining Experience</h2>
+    <p>Reserve your table at our exquisite restaurant, where culinary delights await. Explore our diverse menu offerings across various cuisines, check out our pricing, and book your spot for an unforgettable meal.</p>
+    
+    <h2>Cuisines Offered</h2>
+    <ul>
+        <li>Italian</li>
+        <li>Chinese</li>
+        <li>Mexican</li>
+        <li>Indian</li>
+        <li>French</li>
+        <li>Japanese</li>
+    </ul>
+    
+    <h2>Menu Pricing</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Dish</th>
+                <th>Cuisine</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Margherita Pizza</td>
+                <td>Italian</td>
+                <td>$12.99</td>
+            </tr>
+            <tr>
+                <td>Kung Pao Chicken</td>
+                <td>Chinese</td>
+                <td>$14.99</td>
+            </tr>
+            <tr>
+                <td>Tacos al Pastor</td>
+                <td>Mexican</td>
+                <td>$10.99</td>
+            </tr>
+            <tr>
+                <td>Butter Chicken</td>
+                <td>Indian</td>
+                <td>$15.99</td>
+            </tr>
+            <tr>
+                <td>Coq au Vin</td>
+                <td>French</td>
+                <td>$18.99</td>
+            </tr>
+            <tr>
+                <td>Sushi Platter</td>
+                <td>Japanese</td>
+                <td>$22.99</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Book a Reservation</h2>
+    <form action="/submit-reservation" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="20" required>
+        
+        <label for="cuisine">Preferred Cuisine:</label>
+        <select id="cuisine" name="cuisine" required>
+            <option value="">Select Cuisine</option>
+            <option value="italian">Italian</option>
+            <option value="chinese">Chinese</option>
+            <option value="mexican">Mexican</option>
+            <option value="indian">Indian</option>
+            <option value="french">French</option>
+            <option value="japanese">Japanese</option>
+        </select>
+        
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Reservation Time:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <button type="submit">Book Reservation</button>
+    </form>
+</body>
+</html>
+```

@@ -1,0 +1,120 @@
+<think>
+First, the user wants a web page for a Travel Agency. It should include:
+
+</think>```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form { max-width: 400px; margin-top: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, textarea, button { width: 100%; padding: 8px; margin-bottom: 10px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Travel Agency</h1>
+    
+    <h2>Explore the World with Us</h2>
+    <p>Embark on unforgettable adventures with our expertly curated tour packages. Whether you're seeking cultural immersion, adventure, or relaxation, our travel agency offers tailored experiences to suit every traveler. Browse our packages, check detailed itineraries, and send us an inquiry to start planning your dream trip.</p>
+    
+    <h2>Tour Packages</h2>
+    <ul>
+        <li>European Grand Tour</li>
+        <li>Asian Adventure</li>
+        <li>African Safari</li>
+        <li>Caribbean Beach Escape</li>
+        <li>South American Expedition</li>
+        <li>Australian Outback</li>
+    </ul>
+    
+    <h2>Travel Itineraries</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Highlights</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>European Grand Tour</td>
+                <td>10 Days</td>
+                <td>$2,499</td>
+                <td>Paris, Rome, Barcelona - Eiffel Tower, Colosseum, Sagrada Familia</td>
+            </tr>
+            <tr>
+                <td>Asian Adventure</td>
+                <td>14 Days</td>
+                <td>$1,899</td>
+                <td>Tokyo, Bangkok, Bali - Temples, Markets, Beaches</td>
+            </tr>
+            <tr>
+                <td>African Safari</td>
+                <td>7 Days</td>
+                <td>$3,299</td>
+                <td>Kenya, Tanzania - Wildlife viewing, Maasai culture</td>
+            </tr>
+            <tr>
+                <td>Caribbean Beach Escape</td>
+                <td>5 Days</td>
+                <td>$1,199</td>
+                <td>Jamaica, Bahamas - Snorkeling, Relaxation</td>
+            </tr>
+            <tr>
+                <td>South American Expedition</td>
+                <td>12 Days</td>
+                <td>$2,799</td>
+                <td>Peru, Brazil - Machu Picchu, Amazon Rainforest</td>
+            </tr>
+            <tr>
+                <td>Australian Outback</td>
+                <td>9 Days</td>
+                <td>$2,199</td>
+                <td>Sydney, Uluru - Opera House, Red Centre</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Inquiry Form</h2>
+    <form action="/submit-inquiry" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="package">Interested Package:</label>
+        <select id="package" name="package" required>
+            <option value="">Select Package</option>
+            <option value="european">European Grand Tour</option>
+            <option value="asian">Asian Adventure</option>
+            <option value="african">African Safari</option>
+            <option value="caribbean">Caribbean Beach Escape</option>
+            <option value="south-america">South American Expedition</option>
+            <option value="australian">Australian Outback</option>
+        </select>
+        
+        <label for="travel-date">Preferred Travel Date:</label>
+        <input type="date" id="travel-date" name="travel-date" required>
+        
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        
+        <button type="submit">Send Inquiry</button>
+    </form>
+</body>
+</html>
+```
